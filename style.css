@@ -1,0 +1,166 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+.main{
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.tenis-box{
+   position:relative;
+   background-color: white;
+   border-radius: 16px 50px 16px 16px;
+   box-shadow: #777 0px 0px 20px 5px;
+   width: 270px;
+   padding-top: 120px;
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-bottom: 15px;
+}
+.tenis-foto{
+    position:absolute;
+    top: -200px;
+    right: -130px;
+}
+.tenis-marca{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #8f8f8f;
+
+}
+.tenis-modelo{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    color: #29455f;
+    margin-top: 2px;
+    margin-bottom: 20px;
+}
+.tenis-preco{
+    text-align: right;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #29455f;
+    line-height: 30px;
+}
+.tenis-preco .tenis-cifrao{
+    font-size: 14px;
+    color: #808080;
+    line-height: 19px;
+}
+.radiocor{
+    display: none;
+}
+.labelcor{
+    width:20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1.5px solid transparent;
+}
+.labelcor.labelcorverde{
+    background: #b5db48;
+}
+.labelcor.labelcorvermelha{
+    background: #ff3838;
+}
+.labelcor.labelcorazul{
+    background: #3864ff;
+}
+.radiocor:checked ~ .labelcor{
+    border-color:black;
+}
+.cordacor{
+    font-family:'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #808080
+}
+.corwrapper{
+    display: inline-block; 
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.cor-tamanhos{
+    font-family:'Open Sans', sans-serif;
+    font-size: 12px;
+    color:#808080;
+    font-weight: 600; 
+    margin-bottom: 5px;
+}
+.radionumeracao{
+    display:none;
+}
+.labelnumero{
+    width: 26px;
+    height: 28px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 1.5px solid rgba(0, 0, 0, 0.30);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: #808080;
+}
+.radionumeracao:checked ~ .labelnumero{
+    background: var(--corprincipal);
+    color: white;
+}
+.compras{
+    background-color: var(--corprincipal);
+    display: flex;
+    border: none;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    grid-area: compras;
+    justify-content: space-evenly;
+    height: 90px;
+}
+.compras .setas{
+    margin-bottom: -3px;
+    width: 15px;
+}
+.setas:last-child{
+    margin-bottom: 0;
+}
+.wrappersetas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.compras .setas:nth-child(1){
+    opacity: 50%;
+}
+.compras .setas:nth-child(2){
+    opacity: 70%;
+}
+.tenis-action{
+    display:grid;
+    grid-template-areas:"cores compras"
+                        "tamanhos compras";
+    grid-template-columns: 60% 25%;
+    grid-column-gap: 10%;
+    align-items: end;
+}
+.cores{
+    grid-area: cores;
+}
+.tamanhos{
+    grid-area: tamanhos;
+}

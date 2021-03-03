@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main">
+        <div id="tenisbox" style="--corprincipal:#b5db48" class="tenis-box"> 
+            <img id="tenisfoto" src="./img/tenis-verde.png" alt="" class="tenis-foto">
+            <small class="tenis-marca">Nike</small>
+            <h6 class="tenis-modelo">Epic React Flyknit 2</h6>
+            <p class="tenis-preco"><span class="tenis-cifrao">R$</span> 359,00</p>
+            <div class="tenis-action">
+                <div class="cores">
+                    <p class="cordacor"> Cores:</p>
+                    <span class="corwrapper">
+                        <input class="radiocor" value="verde" checked id="corverde" name="cor" type="radio">
+                        <label class="labelcor labelcorverde" for="corverde"></label>
+                    </span>
+                    <span class="corwrapper">
+                        <input class="radiocor" value="vermelho" id="corvermelha" name="cor" type="radio">
+                        <label class="labelcor labelcorvermelha" for="corvermelha"></label>
+                    </span>
+                    <span class="corwrapper">
+                        <input class="radiocor" value="azul" id="corazul" name="cor" type="radio">
+                        <label class="labelcor labelcorazul" for="corazul"></label>
+                    </span>
+
+                </div>
+                <div class="tamanhos">
+                    <p class="cor-tamanhos"> Tamanhos:</p>
+        
+                    <span class="num-numero">
+                        <input class="radionumeracao" checked id="numero37" name="numero" type="radio">
+                        <label class="labelnumero label37" for="numero37">37</label>
+                    </span>
+        
+                    <span class="num-numero">
+                        <input class="radionumeracao" id="numero38" name="numero" type="radio">
+                        <label class="labelnumero label38" for="numero38">38</label>
+                    </span>
+        
+                    <span class="num-numero">
+                        <input class="radionumeracao" id="numero39" name="numero" type="radio">
+                        <label class="labelnumero label39" for="numero39">39</label>
+                    </span>
+        
+                    <span class="num-numero">
+                        <input class="radionumeracao" id="numero40" name="numero" type="radio">
+                        <label class="labelnumero label40" for="numero40">40</label>
+                    </span>
+
+                </div>
+                <button class="compras">
+                    <div class="wrappersetas">
+                        <img class="setas" src="./img/seta.svg" alt="">
+                        <img class="setas" src="./img/seta.svg" alt="">
+                        <img class="setas" src="./img/seta.svg" alt="">
+                    </div>
+                    <img class="carrinho" src="./img/carrinho.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
